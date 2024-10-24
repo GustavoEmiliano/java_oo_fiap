@@ -1,22 +1,13 @@
 package aula_1;
-import java.util.Scanner;
 
 public class Exercicio02 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        int soma = 0;
 
-        System.out.print("Digite o nome de usuário: ");
-        String usuario = scanner.nextLine();
-
-        System.out.print("Digite a senha: ");
-        String senha = scanner.nextLine();
-
-        if (usuario.equals("administrador") && senha.equals("123")) {
-            System.out.println("Acesso permitido.");
-        } else {
-            System.out.println("Acesso negado.");
+        for (int i = 0; i <= 100; i++) {
+            soma += i;
         }
 
-        scanner.close();
+        System.out.println("A soma dos números de 0 a 100 é: " + soma);
     }
 }
